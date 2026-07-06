@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data and quality — The reunion premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://rmallorybpc.github.io/tmg-brand-guide/dist/tmg.css">
+<link rel="stylesheet" href="study.css">
+</head>
+<body>
+<nav class="tmg-nav" role="banner">
+  <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
+  <div class="tmg-dropdown-wrap">
+    <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
+      <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+    <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+      <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
+      <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
+      <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
+      <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
+      <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+    </div>
+  </div>
+</nav>
+<div class="study-subnav"><div class="inner">
+  <a href="index.html">Overview</a>
+  <a href="findings.html">Key findings</a>
+  <a href="methods.html">Methods</a>
+  <a href="audit.html">Audit</a>
+  <a href="data.html" class="active">Data</a>
+</div></div>
+
+<main class="tmg-page"><div class="tmg-container">
+  <header class="tmg-page-header">
+    <p class="eyebrow">Transparency</p>
+    <h1 class="tmg-page-title">Data and quality</h1>
+    <p class="study-lede">What went into the study, what was resolved, and what could not be used. The estimates rest on a smaller, cleaner sample than the raw signing counts suggest, and this page states that outright.</p>
+  </header>
+
+  <div class="tmg-bento-grid">
+
+    <section class="tmg-card-wide">
+      <div class="tmg-card-label">From signings to sample</div>
+      <h3 class="tmg-h3">The funnel</h3>
+      <table class="tmg-table">
+        <thead><tr><th scope="col">Stage</th><th scope="col" style="text-align:right">Count</th><th scope="col">Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>Free-agent signings, 2017–2026</td><td class="num">6,543</td><td>distinct player-team-year signings</td></tr>
+          <tr><td>Resolved to a stable player id</td><td class="num">92%</td><td>matched to nflverse id by name + season + team</td></tr>
+          <tr><td>Resolvable for a reunion</td><td class="num">3,917</td><td>id known, new staff known, a prior team exists</td></tr>
+          <tr><td>With a measurable prior role</td><td class="num">1,219</td><td>had a real season of production before the move</td></tr>
+          <tr><td>Real-market contracts (&gt; $2M)</td><td class="num">708</td><td>used for the pay question</td></tr>
+        </tbody>
+      </table>
+      <p class="note">The production model runs on 430 of these, with 74 reunions. That is the real size of the study, not the 3,917 or the 6,543.</p>
+    </section>
+
+    <div class="tmg-card"><div class="tmg-card-label">Reunions identified</div><div class="tmg-card-value">524</div><div class="tmg-card-sub">242 head coach · 427 through coordinators</div></div>
+    <div class="tmg-card"><div class="tmg-card-label">Id resolution</div><div class="tmg-card-value">92%</div><div class="tmg-card-sub">replaces name-only matching (163 name collisions)</div></div>
+    <div class="tmg-card"><div class="tmg-card-label">Coach cells corrected</div><div class="tmg-card-value">4</div><div class="tmg-card-sub">same-season duplicates fixed to the right team</div></div>
+    <div class="tmg-card"><div class="tmg-card-label">History span</div><div class="tmg-card-value">2006–26</div><div class="tmg-card-sub">nflverse + nfldata rosters, joined by id</div></div>
+
+    <section class="tmg-card-wide">
+      <div class="tmg-card-label">Coverage within resolvable signings</div>
+      <h3 class="tmg-h3">What is present, and what is missing</h3>
+      <table class="tmg-table">
+        <thead><tr><th scope="col">Field</th><th scope="col" style="text-align:right">Present</th></tr></thead>
+        <tbody>
+          <tr><td>Prior-season production</td><td class="num">31%</td></tr>
+          <tr><td>Post-move production (two seasons)</td><td class="num">15%</td></tr>
+          <tr><td>Age</td><td class="num">62%</td></tr>
+          <tr><td>Usable contract value (AAV &gt; 0)</td><td class="num">78%</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Post-move production is the binding limit. Most signings are depth or practice-squad moves that never produce a measurable season, so they carry no production signal even though they count as signings.</p>
+    </section>
+
+    <section class="tmg-card">
+      <div class="tmg-card-label">What was excluded</div>
+      <h3 class="tmg-h3">And why</h3>
+      <div class="study-prose" style="margin-top:8px">
+        <ul>
+          <li><span class="klabel">Unresolved players (11%).</span> No confident id match, dropped rather than guessed.</li>
+          <li><span class="klabel">Depth and practice-squad moves.</span> No measurable role before or after, so no production to retain.</li>
+          <li><span class="klabel">Zero and minimum contracts.</span> 32% of signings have a zero AAV and 71% sit at or near the minimum. The pay question uses market contracts only.</li>
+          <li><span class="klabel">2025 and 2026 signings.</span> Production data ends in 2024, so these have no post-move outcome yet.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="tmg-card">
+      <div class="tmg-card-label">The offensive line</div>
+      <h3 class="tmg-h3">Measured on availability, not quality</h3>
+      <div class="study-prose" style="margin-top:8px"><p>Box scores carry no production number for offensive linemen, and Approximate Value, the one metric that does, is not available for recent seasons without a paid subscription. So for the line the study uses the signal it can source freely: availability, whether the player held his snaps and starts. Line production quality is not publicly measurable, and this study does not claim to measure it.</p></div>
+    </section>
+
+    <section class="tmg-card">
+      <div class="tmg-card-label">Sources</div>
+      <h3 class="tmg-h3">All public</h3>
+      <div class="study-prose" style="margin-top:8px">
+        <ul>
+          <li><span class="klabel">Signings, contracts.</span> Open movement dataset, Spotrac-sourced.</li>
+          <li><span class="klabel">Production, snaps, rosters.</span> nflverse.</li>
+          <li><span class="klabel">Deep roster history.</span> nfldata, joined by pfr id.</li>
+          <li><span class="klabel">Coaching staffs.</span> Assembled 2013–2026, corrected, shipped in the repo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="tmg-card-wide">
+      <div class="tmg-card-label">Honest bottom line</div>
+      <h3 class="tmg-h3">A small, clean sample and a small, clean effect</h3>
+      <div class="study-prose" style="margin-top:8px">
+        <p>On this sample: no pay premium for reunions (&minus;0.8%, p = 0.90), and a small negative on production retention (about −0.06, p = 0.03 pooled) that survives selection, nonlinearity, and placebo checks but fades on subsamples. Availability is roughly flat. The full record of how the data was cleaned and how the result changed is in the repository's audit log.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="pagenav">
+    <a href="audit.html">&larr; Audit</a>
+    <a href="index.html">Overview &rarr;</a>
+  </div>
+</div></main>
+
+<footer class="tmg-footer">
+  The reunion premium by The Mallory Group. Last updated 2026. &nbsp;<a href="https://github.com/rmallorybpc/nfl-coach-continuity" style="color:var(--tmg-sage)">Repository</a>
+</footer>
+<script>
+(function(){var b=document.getElementById('tmgDdBtn'),m=document.getElementById('tmgDdMenu');if(!b||!m)return;
+b.addEventListener('click',function(e){e.stopPropagation();var o=m.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o));});
+document.addEventListener('click',function(){m.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){m.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* Study-specific supplements. TMG tokens only. Base styles come from tmg.css (CDN). */
+.study-subnav{background:var(--tmg-white);border-bottom:var(--tmg-border)}
+.study-subnav .inner{max-width:1280px;margin:0 auto;padding:9px 24px;display:flex;gap:20px;flex-wrap:wrap;font-size:13px}
+.study-subnav a{color:rgba(45,52,54,.55);text-decoration:none}
+.study-subnav a.active{color:var(--tmg-charcoal);font-weight:500}
+.study-subnav a:hover{color:var(--tmg-sage-hover)}
+.study-lede{font-size:15px;color:rgba(45,52,54,.60);max-width:64ch;margin:8px 0 0;line-height:1.6}
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--tmg-sage);margin:0 0 6px}
+.study-prose p{margin:0 0 12px;font-size:16px;line-height:1.7}
+.study-prose p:last-child{margin-bottom:0}
+.study-prose ul{margin:0;padding:0;list-style:none}
+.study-prose li{padding:8px 0;border-bottom:var(--tmg-border);font-size:15px}
+.study-prose li:last-child{border-bottom:none}
+.klabel{color:rgba(45,52,54,.55)}
+.chart-area{display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start}
+.chart-col{flex:1 1 300px;min-width:270px}
+.chart-col h4{font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:rgba(45,52,54,.50);margin:0 0 8px}
+figure{margin:0}
+figcaption{font-size:13px;color:rgba(45,52,54,.55);margin-top:14px;max-width:66ch;line-height:1.6}
+svg{max-width:100%;height:auto;display:block}
+.tmg-table td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pagenav{display:flex;justify-content:space-between;gap:16px;margin-top:var(--tmg-gap);font-size:14px}
+.pagenav a{color:var(--tmg-sage);text-decoration:none}
+.pagenav a:hover{color:var(--tmg-sage-hover)}
+.note{font-size:13px;color:rgba(45,52,54,.55);margin-top:4px}
