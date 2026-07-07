@@ -21,6 +21,10 @@
 .klabel{color:rgba(45,52,54,.55)}
 .chart-area{display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start}
 .chart-col{flex:1 1 300px;min-width:270px}
+.chart-area-split .chart-col + .chart-col{border-left:var(--tmg-border);padding-left:24px}
+@media (max-width:700px){
+	.chart-area-split .chart-col + .chart-col{border-left:none;padding-left:0}
+}
 .chart-col h4{font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:rgba(45,52,54,.50);margin:0 0 8px}
 figure{margin:0}
 figcaption{font-size:13px;color:rgba(45,52,54,.55);margin-top:14px;max-width:66ch;line-height:1.6}
