@@ -4,6 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data and quality — The reunion premium</title>
+<style>
+:root {
+  --tmg-cream: #FDFCF0;
+  --tmg-charcoal: #2D3436;
+  --tmg-sage: #84A98C;
+  --tmg-sage-hover: #6B8F74;
+  --tmg-white: #FFFFFF;
+  --tmg-bg: var(--tmg-cream);
+  --tmg-text: var(--tmg-charcoal);
+  --tmg-accent: var(--tmg-sage);
+  --tmg-surface: var(--tmg-white);
+  --tmg-success: #2E8540;
+  --tmg-warning: #C47F00;
+  --tmg-error: #B00020;
+  --tmg-border: 1px solid rgba(45, 52, 54, 0.12);
+  --tmg-border-hover: 1px solid rgba(132, 169, 140, 0.50);
+  --tmg-bento-radius: 16px;
+  --tmg-nav-radius: 8px;
+  --tmg-btn-radius: 8px;
+  --tmg-gap: 24px;
+  --tmg-gap-sm: 12px;
+  --tmg-shadow-sm: 0 1px 3px rgba(45, 52, 54, 0.08);
+  --tmg-shadow-md: 0 2px 8px rgba(45, 52, 54, 0.10);
+}
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -12,39 +37,41 @@
 </head>
 <body>
 <nav class="tmg-nav" role="banner">
-  <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
-  <div class="tmg-dropdown-wrap">
-    <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
-      <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-    <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
-      <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
-      <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
-      <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
-      <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
-      <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+  <div class="tmg-nav-main">
+    <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
+    <div class="tmg-dropdown-wrap">
+      <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
+        <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+        <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
+        <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
+        <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
+        <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
+        <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+      </div>
     </div>
   </div>
+  <div class="study-subnav study-subnav-nav"><div class="inner">
+    <a href="index.html">Overview</a>
+    <a href="findings.html">Key findings</a>
+    <a href="methods.html">Methods</a>
+    <a href="audit.html">Audit</a>
+    <a href="data.html" class="active">Data</a>
+  </div></div>
 </nav>
-<div class="study-subnav"><div class="inner">
-  <a href="index.html">Overview</a>
-  <a href="findings.html">Key findings</a>
-  <a href="methods.html">Methods</a>
-  <a href="audit.html">Audit</a>
-  <a href="data.html" class="active">Data</a>
-</div></div>
 
-<main class="tmg-page"><div class="tmg-container">
+<main><div class="tmg-page tmg-container">
   <header class="tmg-page-header">
-    <p class="eyebrow">Transparency</p>
+    <p class="tmg-eyebrow">Transparency</p>
     <h1 class="tmg-page-title">Data and quality</h1>
-    <p class="study-lede">What went into the study, what was resolved, and what could not be used. The estimates rest on a smaller, cleaner sample than the raw signing counts suggest, and this page states that outright.</p>
+    <p class="study-lede tmg-page-desc">What went into the study, what was resolved, and what could not be used. The estimates rest on a smaller, cleaner sample than the raw signing counts suggest, and this page states that outright.</p>
   </header>
 
   <div class="tmg-bento-grid">
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">From signings to sample</div>
-      <h3 class="tmg-h3">The funnel</h3>
+      <h3 class="tmg-h3 tmg-card-title">The funnel</h3>
       <table class="tmg-table">
         <thead><tr><th scope="col">Stage</th><th scope="col" style="text-align:right">Count</th><th scope="col">Meaning</th></tr></thead>
         <tbody>
@@ -65,7 +92,7 @@
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">Coverage within resolvable signings</div>
-      <h3 class="tmg-h3">What is present, and what is missing</h3>
+      <h3 class="tmg-h3 tmg-card-title">What is present, and what is missing</h3>
       <table class="tmg-table">
         <thead><tr><th scope="col">Field</th><th scope="col" style="text-align:right">Present</th></tr></thead>
         <tbody>
@@ -80,7 +107,7 @@
 
     <section class="tmg-card">
       <div class="tmg-card-label">What was excluded</div>
-      <h3 class="tmg-h3">And why</h3>
+      <h3 class="tmg-h3 tmg-card-title">And why</h3>
       <div class="study-prose" style="margin-top:8px">
         <ul>
           <li><span class="klabel">Unresolved players (11%).</span> No confident id match, dropped rather than guessed.</li>
@@ -93,13 +120,13 @@
 
     <section class="tmg-card">
       <div class="tmg-card-label">The offensive line</div>
-      <h3 class="tmg-h3">Measured on availability, not quality</h3>
+      <h3 class="tmg-h3 tmg-card-title">Measured on availability, not quality</h3>
       <div class="study-prose" style="margin-top:8px"><p>Box scores carry no production number for offensive linemen, and Approximate Value, the one metric that does, is not available for recent seasons without a paid subscription. So for the line the study uses the signal it can source freely: availability, whether the player held his snaps and starts. Line production quality is not publicly measurable, and this study does not claim to measure it.</p></div>
     </section>
 
     <section class="tmg-card">
       <div class="tmg-card-label">Sources</div>
-      <h3 class="tmg-h3">All public</h3>
+      <h3 class="tmg-h3 tmg-card-title">All public</h3>
       <div class="study-prose" style="margin-top:8px">
         <ul>
           <li><span class="klabel">Signings, contracts.</span> Open movement dataset, Spotrac-sourced.</li>
@@ -112,7 +139,7 @@
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">Honest bottom line</div>
-      <h3 class="tmg-h3">A small, clean sample and a small, clean effect</h3>
+      <h3 class="tmg-h3 tmg-card-title">A small, clean sample and a small, clean effect</h3>
       <div class="study-prose" style="margin-top:8px">
         <p>On this sample: no pay premium for reunions (&minus;0.8%, p = 0.90), and a small negative on production retention (about −0.06, p = 0.03 pooled) that survives selection, nonlinearity, and placebo checks but fades on subsamples. Availability is roughly flat. The full record of how the data was cleaned and how the result changed is in the repository's audit log.</p>
       </div>

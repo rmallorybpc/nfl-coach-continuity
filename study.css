@@ -1,4 +1,7 @@
 /* Study-specific supplements. TMG tokens only. Base styles come from tmg.css (CDN). */
+.tmg-nav{display:block;height:auto;padding:0}
+.tmg-nav-main{height:56px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.study-subnav-nav{border-top:var(--tmg-border);border-bottom:var(--tmg-border)}
 .study-subnav{background:var(--tmg-white);border-bottom:var(--tmg-border)}
 .study-subnav .inner{max-width:1280px;margin:0 auto;padding:9px 24px;display:flex;gap:20px;flex-wrap:wrap;font-size:13px}
 .study-subnav a{color:rgba(45,52,54,.55);text-decoration:none}

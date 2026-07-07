@@ -4,6 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Audit — The reunion premium</title>
+<style>
+:root {
+  --tmg-cream: #FDFCF0;
+  --tmg-charcoal: #2D3436;
+  --tmg-sage: #84A98C;
+  --tmg-sage-hover: #6B8F74;
+  --tmg-white: #FFFFFF;
+  --tmg-bg: var(--tmg-cream);
+  --tmg-text: var(--tmg-charcoal);
+  --tmg-accent: var(--tmg-sage);
+  --tmg-surface: var(--tmg-white);
+  --tmg-success: #2E8540;
+  --tmg-warning: #C47F00;
+  --tmg-error: #B00020;
+  --tmg-border: 1px solid rgba(45, 52, 54, 0.12);
+  --tmg-border-hover: 1px solid rgba(132, 169, 140, 0.50);
+  --tmg-bento-radius: 16px;
+  --tmg-nav-radius: 8px;
+  --tmg-btn-radius: 8px;
+  --tmg-gap: 24px;
+  --tmg-gap-sm: 12px;
+  --tmg-shadow-sm: 0 1px 3px rgba(45, 52, 54, 0.08);
+  --tmg-shadow-md: 0 2px 8px rgba(45, 52, 54, 0.10);
+}
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -12,61 +37,63 @@
 </head>
 <body>
 <nav class="tmg-nav" role="banner">
-  <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
-  <div class="tmg-dropdown-wrap">
-    <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
-      <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-    <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
-      <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
-      <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
-      <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
-      <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
-      <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+  <div class="tmg-nav-main">
+    <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
+    <div class="tmg-dropdown-wrap">
+      <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
+        <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+        <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
+        <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
+        <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
+        <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
+        <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+      </div>
     </div>
   </div>
+  <div class="study-subnav study-subnav-nav"><div class="inner">
+    <a href="index.html">Overview</a>
+    <a href="findings.html">Key findings</a>
+    <a href="methods.html">Methods</a>
+    <a href="audit.html" class="active">Audit</a>
+  </div></div>
 </nav>
-<div class="study-subnav"><div class="inner">
-  <a href="index.html">Overview</a>
-  <a href="findings.html">Key findings</a>
-  <a href="methods.html">Methods</a>
-  <a href="audit.html" class="active">Audit</a>
-</div></div>
 
-<main class="tmg-page"><div class="tmg-container">
+<main><div class="tmg-page tmg-container">
   <header class="tmg-page-header">
-    <p class="eyebrow">How this idea was tested before it was built</p>
+    <p class="tmg-eyebrow">How this idea was tested before it was built</p>
     <h1 class="tmg-page-title">Audit</h1>
-    <p class="study-lede">The idea was gated before any modeling. Each gate had to clear or the project would stop. Here is what each one found.</p>
+    <p class="study-lede tmg-page-desc">The idea was gated before any modeling. Each gate had to clear or the project would stop. Here is what each one found.</p>
   </header>
 
   <div class="tmg-bento-grid">
     <section class="tmg-card">
       <div class="tmg-card-label">Gate one</div>
-      <h3 class="tmg-h3">Is there enough to measure?</h3>
+      <h3 class="tmg-h3 tmg-card-title">Is there enough to measure?</h3>
       <div class="study-prose" style="margin-top:8px"><p>The first risk was sample size. Reunions could be rare. If the treatment cell were in the low dozens, the study was dead on arrival. So the treatment was counted first. It came in at 493 cross-team reunions, and it holds up split by role and side of the ball. Sample size is not the constraint.</p></div>
     </section>
 
     <section class="tmg-card">
       <div class="tmg-card-label">Gate two</div>
-      <h3 class="tmg-h3">Continuity, or coach foresight?</h3>
+      <h3 class="tmg-h3 tmg-card-title">Continuity, or coach foresight?</h3>
       <div class="study-prose" style="margin-top:8px"><p>A coach who signs a player he knows may be acting on a private read that the player will fit, not on continuity. Public data cannot fully separate the two. So the study tested whether reunion signings look different. They do. Reunions are paid about 14 percent more. The selection is real and positive, and the honest headline is the question itself.</p></div>
     </section>
 
     <section class="tmg-card">
       <div class="tmg-card-label">Gate three</div>
-      <h3 class="tmg-h3">Is the question already worked over?</h3>
+      <h3 class="tmg-h3 tmg-card-title">Is the question already worked over?</h3>
       <div class="study-prose" style="margin-top:8px"><p>Reunions are the most discussed idea in NFL free agency, and the league runs a tool that surfaces the links. All of it is prospective. None of it measures whether the reunion pays off. The nearest academic work studies team win percentage, not individual production. The concept is saturated. The measured question is open.</p></div>
     </section>
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">A correction on the record</div>
-      <h3 class="tmg-h3">The result moved during review</h3>
+      <h3 class="tmg-h3 tmg-card-title">The result moved during review</h3>
       <div class="study-prose" style="margin-top:8px"><p>A first cut of the production model showed a small negative that reached significance. It leaned on a defensive metric weighted by hand. A robustness pass with an equal-weight standardized metric erased it, from p = 0.05 to p = 0.39. The claim was walked back. The study reports an absence of benefit, not a penalty. This is recorded here because the correction is part of the honest account.</p></div>
     </section>
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">Standing limitations</div>
-      <h3 class="tmg-h3">What to hold in mind</h3>
+      <h3 class="tmg-h3 tmg-card-title">What to hold in mind</h3>
       <div class="study-prose" style="margin-top:8px">
         <ul>
           <li>The reunion cells are modest. A null is a failure to find the paid-for effect, not proof of a true zero.</li>
@@ -79,7 +106,7 @@
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">Posture</div>
-      <h3 class="tmg-h3">A null is a result</h3>
+      <h3 class="tmg-h3 tmg-card-title">A null is a result</h3>
       <div class="study-prose" style="margin-top:8px"><p>The study set out to find whether coach continuity reduces the transfer cost. It does not, on this data, at any level of the staff. That is a finding. The premium is real and the payoff is not, and that gap is worth publishing precisely because the market behaves as if the opposite were true.</p></div>
     </section>
   </div>

@@ -4,6 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Methods — The reunion premium</title>
+<style>
+:root {
+  --tmg-cream: #FDFCF0;
+  --tmg-charcoal: #2D3436;
+  --tmg-sage: #84A98C;
+  --tmg-sage-hover: #6B8F74;
+  --tmg-white: #FFFFFF;
+  --tmg-bg: var(--tmg-cream);
+  --tmg-text: var(--tmg-charcoal);
+  --tmg-accent: var(--tmg-sage);
+  --tmg-surface: var(--tmg-white);
+  --tmg-success: #2E8540;
+  --tmg-warning: #C47F00;
+  --tmg-error: #B00020;
+  --tmg-border: 1px solid rgba(45, 52, 54, 0.12);
+  --tmg-border-hover: 1px solid rgba(132, 169, 140, 0.50);
+  --tmg-bento-radius: 16px;
+  --tmg-nav-radius: 8px;
+  --tmg-btn-radius: 8px;
+  --tmg-gap: 24px;
+  --tmg-gap-sm: 12px;
+  --tmg-shadow-sm: 0 1px 3px rgba(45, 52, 54, 0.08);
+  --tmg-shadow-md: 0 2px 8px rgba(45, 52, 54, 0.10);
+}
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -12,37 +37,39 @@
 </head>
 <body>
 <nav class="tmg-nav" role="banner">
-  <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
-  <div class="tmg-dropdown-wrap">
-    <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
-      <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-    <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
-      <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
-      <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
-      <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
-      <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
-      <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+  <div class="tmg-nav-main">
+    <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
+    <div class="tmg-dropdown-wrap">
+      <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
+        <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+        <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
+        <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
+        <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
+        <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
+        <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+      </div>
     </div>
   </div>
+  <div class="study-subnav study-subnav-nav"><div class="inner">
+    <a href="index.html">Overview</a>
+    <a href="findings.html">Key findings</a>
+    <a href="methods.html" class="active">Methods</a>
+    <a href="audit.html">Audit</a>
+  </div></div>
 </nav>
-<div class="study-subnav"><div class="inner">
-  <a href="index.html">Overview</a>
-  <a href="findings.html">Key findings</a>
-  <a href="methods.html" class="active">Methods</a>
-  <a href="audit.html">Audit</a>
-</div></div>
 
-<main class="tmg-page"><div class="tmg-container">
+<main><div class="tmg-page tmg-container">
   <header class="tmg-page-header">
-    <p class="eyebrow">How the study was built</p>
+    <p class="tmg-eyebrow">How the study was built</p>
     <h1 class="tmg-page-title">Methods</h1>
-    <p class="study-lede">Public data throughout. The one piece with no clean source, full coaching staffs, was assembled by hand.</p>
+    <p class="study-lede tmg-page-desc">Public data throughout. The one piece with no clean source, full coaching staffs, was assembled by hand.</p>
   </header>
 
   <div class="tmg-bento-grid">
     <section class="tmg-card-wide">
       <div class="tmg-card-label">Treatment</div>
-      <h3 class="tmg-h3">Coach reunions</h3>
+      <h3 class="tmg-h3 tmg-card-title">Coach reunions</h3>
       <div class="study-prose" style="margin-top:8px">
         <p>The signing set is free-agent moves from 2017 to 2026 in an open movement dataset, 6,568 in all. It reduces to about 3,800 where the player has a prior team and the signing team's staff is known. A signing is a reunion when the new team's head coach, the coordinator for the player's side, or his unit position coach appears anywhere on the staff of a team the player was rostered with in an earlier season. That produces 493 cross-team reunions.</p>
         <p>Coaching staffs are the reason the study exists in this form. No clean public source lists full NFL staffs by year. So staffs were assembled for all 32 teams from 2013 to 2026, head coach through position coach, and the reunion flag is built from that history. Three nested definitions are tested: head coach only, head coach plus coordinators, and the full staff including position coaches.</p>
@@ -51,7 +78,7 @@
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">Outcome</div>
-      <h3 class="tmg-h3">Production retained</h3>
+      <h3 class="tmg-h3 tmg-card-title">Production retained</h3>
       <div class="study-prose" style="margin-top:8px">
         <p>Production is a percentile within position and season, so a receiver is judged against receivers and a pass rusher against pass rushers. Offense uses points production from nflverse. Defense uses an equal-weight standardized composite of tackles, sacks, tackles for loss, quarterback hits, interceptions, passes defended, and forced fumbles. Availability uses seasonal snap share. Players with fewer than four games in a season are dropped from the percentile.</p>
         <p>Retained production is the player's percentile after the move against his percentile the season before. The two-season version averages the first two years with the new team. Production data runs 2013 to 2024, which covers signings through 2024 with a baseline and an outcome.</p>
@@ -60,7 +87,7 @@
 
     <section class="tmg-card">
       <div class="tmg-card-label">Model</div>
-      <h3 class="tmg-h3">Regression with controls</h3>
+      <h3 class="tmg-h3 tmg-card-title">Regression with controls</h3>
       <div class="study-prose" style="margin-top:8px">
         <p>The retained-production outcome is regressed on the reunion indicator, the prior-season baseline, age, position, and year. Contract value is added to absorb the pay premium. The reunion coefficient is read as an upper bound on any continuity benefit, because the selection inflates it, and it is still not distinguishable from zero.</p>
         <p>The pay result is a separate regression: log contract value on the reunion indicator, with position, year, and team controls.</p>
@@ -69,7 +96,7 @@
 
     <section class="tmg-card">
       <div class="tmg-card-label">Sources</div>
-      <h3 class="tmg-h3">Everything public</h3>
+      <h3 class="tmg-h3 tmg-card-title">Everything public</h3>
       <div class="study-prose" style="margin-top:8px">
         <ul>
           <li><span class="klabel">Signings and contracts.</span> Open free-agency movement dataset, Spotrac-sourced.</li>
@@ -82,7 +109,7 @@
 
     <section class="tmg-card-wide">
       <div class="tmg-card-label">Limits</div>
-      <h3 class="tmg-h3">What the design cannot do</h3>
+      <h3 class="tmg-h3 tmg-card-title">What the design cannot do</h3>
       <div class="study-prose" style="margin-top:8px">
         <p>The reunion cells are modest, 24 to 66 players depending on the cut. A null on that sample is a failure to find the effect the market is paying for, not proof of a true zero. The measure is strongest for skill offense and thinner for the line and much of defense, where individual production is hard to isolate from public data. Linemen are measured on availability, not quality. And the pay premium shows the treatment is selected, which observational controls can reduce but not remove.</p>
       </div>
