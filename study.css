@@ -1,12 +1,16 @@
 /* Study-specific supplements. TMG tokens only. Base styles come from tmg.css (CDN). */
 .tmg-nav{display:block;height:auto;padding:0}
-.tmg-nav-main{height:56px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
-.study-subnav-nav{border-top:var(--tmg-border);border-bottom:var(--tmg-border)}
-.study-subnav{background:var(--tmg-white);border-bottom:var(--tmg-border)}
-.study-subnav .inner{max-width:1280px;margin:0 auto;padding:9px 24px;display:flex;gap:20px;flex-wrap:wrap;font-size:13px}
-.study-subnav a{color:rgba(45,52,54,.55);text-decoration:none}
-.study-subnav a.active{color:var(--tmg-charcoal);font-weight:500}
-.study-subnav a:hover{color:var(--tmg-sage-hover)}
+.tmg-nav-main{height:56px;padding:0 24px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:16px}
+.tmg-logo{justify-self:start}
+.tmg-dropdown-wrap{justify-self:end}
+.tmg-nav-links{display:flex;align-items:center;justify-content:center;gap:20px;font-size:13px;white-space:nowrap}
+.tmg-nav-links a{color:rgba(45,52,54,.55);text-decoration:none}
+.tmg-nav-links a.active{color:var(--tmg-charcoal);font-weight:500}
+.tmg-nav-links a:hover{color:var(--tmg-sage-hover)}
+@media (max-width:980px){
+	.tmg-nav-main{grid-template-columns:auto 1fr auto;column-gap:10px;padding:0 12px}
+	.tmg-nav-links{justify-content:flex-start;gap:14px;overflow-x:auto;scrollbar-width:thin}
+}
 .study-lede{font-size:15px;color:rgba(45,52,54,.60);max-width:64ch;margin:8px 0 0;line-height:1.6}
 .eyebrow{font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--tmg-sage);margin:0 0 6px}
 .study-prose p{margin:0 0 12px;font-size:16px;line-height:1.7}
