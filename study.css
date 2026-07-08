@@ -34,3 +34,10 @@ svg{max-width:100%;height:auto;display:block}
 .pagenav a{color:var(--tmg-sage);text-decoration:none}
 .pagenav a:hover{color:var(--tmg-sage-hover)}
 .note{font-size:13px;color:rgba(45,52,54,.55);margin-top:4px}
+
+/* Key findings page: give the final two cards more visual weight on desktop. */
+.findings-tall-card{min-height:clamp(320px,42vh,540px);display:flex;flex-direction:column}
+
+@media (max-width:980px){
+	.findings-tall-card{min-height:0}
+}
