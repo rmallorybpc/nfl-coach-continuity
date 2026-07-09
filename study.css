@@ -39,6 +39,9 @@ svg{max-width:100%;height:auto;display:block}
 .pagenav a:hover{color:var(--tmg-sage-hover)}
 .note{font-size:13px;color:rgba(45,52,54,.55);margin-top:4px}
 
+.study-prose-top{margin-top:8px}
+.study-prose-mid{margin-top:12px}
+.study-prose-block{margin:8px 0 14px}
 .findings-prose-top{margin-top:8px}
 .findings-prose-mid{margin-top:12px}
 .findings-prose-block{margin:8px 0 14px}
