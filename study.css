@@ -48,11 +48,11 @@ svg{max-width:100%;height:auto;display:block}
 .th-right{text-align:right}
 
 /* Key findings page: keep A correction / What it means large and prominent. */
-.findings-tall-card{display:flex;flex-direction:column;min-height:clamp(360px,48vh,620px)}
+.findings-tall-card{display:flex;flex-direction:column;min-height:clamp(300px,40vh,520px)}
 .findings-grid .findings-tall-card{grid-column:1/-1}
 
 @media (min-width:1192px){
-	.findings-grid .findings-tall-card{grid-column:span 2;min-height:clamp(420px,56vh,740px)}
+	.findings-grid .findings-tall-card{grid-column:span 2;min-height:clamp(340px,46vh,620px)}
 }
 
 /* Methods page: make Model and Sources cards occupy more of the row and viewport. */
