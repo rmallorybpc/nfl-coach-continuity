@@ -1,4 +1,4 @@
-# nfl-coach-continuity
+# NFL Coach Continuity
 
 **The reunion premium.** Do NFL free agents who sign with a team where a coach
 already knows them retain more production than comparable players who do not?
