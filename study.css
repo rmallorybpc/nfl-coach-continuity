@@ -74,6 +74,14 @@
 .study-prose p:last-child {
   margin-bottom: 0;
 }
+
+/* Add breathing room between stacked card blocks outside grid layouts. */
+.tmg-container > section[class^="tmg-card"] + section[class^="tmg-card"],
+.tmg-container > section[class^="tmg-card"] + .tmg-bento-grid,
+.tmg-container > .tmg-bento-grid + section[class^="tmg-card"] {
+  margin-top: var(--tmg-gap);
+}
+
 .study-prose ul {
   margin: 0;
   padding: 0;
