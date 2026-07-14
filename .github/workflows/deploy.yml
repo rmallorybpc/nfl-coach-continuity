@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: pip install pandas numpy statsmodels
       - name: Reproduce all regressions from the committed frame
-        run: python code/run_models.py --frame data/production_retention_frame.csv
+        run: python code/run_events.py --panel data/reunion_panel.csv
 
   deploy:
     needs: reproduce
