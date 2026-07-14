@@ -1,147 +1,442 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The reunion premium — The Mallory Group</title>
-<meta name="description" content="Does reuniting with a former coach change the production an NFL player retains? An event study of 8,462 player-seasons and 425 coach reunions, 2015 to 2024. The answer is no.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="tmg.css">
-<link rel="stylesheet" href="study.css">
-</head>
-<body>
-<nav class="tmg-nav" role="banner">
-  <div class="tmg-logo" aria-label="The Mallory Group">
-    <span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span>
-  </div>
-  <div class="tmg-dropdown-wrap">
-    <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">
-      TMG Tool Suite
-      <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    </button>
-    <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
-      <a href="https://rmallorybpc.github.io/nhl-free-agency-research/welcome.html" target="_blank" rel="noreferrer" role="menuitem">NHL Free Agency Research</a>
-      <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/findings.html?season=2022&team_id=PHI" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
-      <a href="https://rmallorybpc.github.io/nba-research-project/" target="_blank" rel="noreferrer" role="menuitem">NBA Supermax Research</a>
-      <a href="https://rmallorybpc.github.io/nhl-play-for-contract/" target="_blank" rel="noreferrer" role="menuitem">NHL Play for Contract</a>
-      <a href="https://rmallorybpc.github.io/talent-portability-research/" target="_blank" rel="noreferrer" role="menuitem">Talent Portability Research</a>
-      <a href="https://rmallorybpc.github.io/external-hire-premium/" target="_blank" rel="noreferrer" role="menuitem">External Hire Premium</a>
-      <a href="https://rmallorybpc.github.io/nfl-coach-continuity/" target="_blank" rel="noreferrer" role="menuitem">NFL Coach Continuity</a>
-      <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
-      <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
-      <a href="https://content-integrity-audit.pages.dev/" target="_blank" rel="noreferrer" role="menuitem">Content Integrity</a>
-      <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
-      <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
-    
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The reunion premium — The Mallory Group</title>
+    <meta
+      name="description"
+      content="Does reuniting with a former coach change the production an NFL player retains? An event study of 8,462 player-seasons and 425 coach reunions, 2015 to 2024. The answer is no."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tmg.css" />
+    <link rel="stylesheet" href="study.css" />
+  </head>
+  <body>
+    <nav class="tmg-nav" role="banner">
+      <div class="tmg-logo" aria-label="The Mallory Group">
+        <span>TM</span>
+        <div class="tmg-logo-divider" aria-hidden="true"></div>
+        <span>G</span>
+      </div>
+      <div class="tmg-dropdown-wrap">
+        <button
+          class="tmg-dropdown-btn"
+          id="tmgDdBtn"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="tmgDdMenu"
+        >
+          TMG Tool Suite
+          <svg
+            class="tmg-chevron"
+            viewBox="0 0 12 12"
+            fill="none"
+            width="12"
+            height="12"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 4l4 4 4-4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+          <a
+            href="https://rmallorybpc.github.io/nhl-free-agency-research/welcome.html"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >NHL Free Agency Research</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/findings.html?season=2022&team_id=PHI"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >NFL Analysis</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/nba-research-project/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >NBA Supermax Research</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/nhl-play-for-contract/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >NHL Play for Contract</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/talent-portability-research/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >Talent Portability Research</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/external-hire-premium/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >External Hire Premium</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/nfl-coach-continuity/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >NFL Coach Continuity</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/recipes/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >Recipe Book</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >PDF Multi-Agent Analysis</a
+          >
+          <a
+            href="https://content-integrity-audit.pages.dev/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >Content Integrity</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/housing-market-intel/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >Housing Market Intel</a
+          >
+          <a
+            href="https://rmallorybpc.github.io/real-estate-report/"
+            target="_blank"
+            rel="noreferrer"
+            role="menuitem"
+            >Real Estate Report</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="study-subnav">
+      <div class="inner">
+        <a href="index.html" class="active">Overview</a>
+        <a href="findings.html">Key findings</a>
+        <a href="methods.html">Methods</a>
+        <a href="audit.html">Audit</a>
+        <a href="data.html">Data</a>
+      </div>
     </div>
-  </div>
-</nav>
 
-<div class="study-subnav"><div class="inner">
-  <a href="index.html" class="active">Overview</a>
-  <a href="findings.html">Key findings</a>
-  <a href="methods.html">Methods</a>
-  <a href="audit.html">Audit</a>
-  <a href="data.html">Data</a>
-</div></div>
+    <main class="tmg-page">
+      <div class="tmg-container">
+        <header class="tmg-page-header">
+          <p class="eyebrow">NFL, 2015 to 2024</p>
+          <h1 class="tmg-page-title">The reunion premium</h1>
+          <p class="study-lede">
+            When a player and a former coach come back together, does the player
+            hold his production? This study measures it two ways, the player
+            moving to the coach and the coach arriving to the player, across
+            8,462 player-seasons. The answer, both ways, is no measurable
+            effect.
+          </p>
+        </header>
 
-<main class="tmg-page"><div class="tmg-container">
-  <header class="tmg-page-header">
-    <p class="eyebrow">NFL, 2015 to 2024</p>
-    <h1 class="tmg-page-title">The reunion premium</h1>
-    <p class="study-lede">When a player and a former coach come back together, does the player hold his production? This study measures it two ways, the player moving to the coach and the coach arriving to the player, across 8,462 player-seasons. The answer, both ways, is no measurable effect.</p>
-  </header>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">Headline finding</div>
+          <h2 class="tmg-h2">
+            Reuniting with a former coach does nothing measurable to the
+            production a player keeps.
+          </h2>
+          <div class="study-prose" style="margin-top: 10px">
+            <p>
+              The league treats coach familiarity as an edge. Reunited against
+              the right comparison, it is not one. A free agent who signs with a
+              team where a former coach now works retains no more production
+              than any other player who changed teams. A player who stays put
+              and has a former coach arrive on his staff gains nothing
+              measurable over comparable players who did not. Both estimates are
+              small, both sit on zero, and a placebo test cannot tell them apart
+              from noise.
+            </p>
+          </div>
+        </section>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">Headline finding</div>
-    <h2 class="tmg-h2">Reuniting with a former coach does nothing measurable to the production a player keeps.</h2>
-    <div class="study-prose" style="margin-top:10px">
-      <p>The league treats coach familiarity as an edge. Reunited against the right comparison, it is not one. A free agent who signs with a team where a former coach now works retains no more production than any other player who changed teams. A player who stays put and has a former coach arrive on his staff gains nothing measurable over comparable players who did not. Both estimates are small, both sit on zero, and a placebo test cannot tell them apart from noise.</p>
-    </div>
-  </section>
+        <div class="tmg-bento-grid">
+          <section class="tmg-card">
+            <div class="tmg-card-label">Player moves to the coach</div>
+            <div class="tmg-card-value">+0.01</div>
+            <div class="tmg-card-sub">
+              production percentile, p = 0.35 · null
+            </div>
+          </section>
+          <section class="tmg-card">
+            <div class="tmg-card-label">Coach moves to the player</div>
+            <div class="tmg-card-value">+0.01</div>
+            <div class="tmg-card-sub">
+              production percentile, p = 0.57 · null
+            </div>
+          </section>
+          <section class="tmg-card">
+            <div class="tmg-card-label">Availability</div>
+            <div class="tmg-card-value">Flat</div>
+            <div class="tmg-card-sub">no effect either direction</div>
+          </section>
+          <section class="tmg-card">
+            <div class="tmg-card-label">Sample</div>
+            <div class="tmg-card-value">8,462</div>
+            <div class="tmg-card-sub">
+              player-seasons · 425 reunions (337 player-move, 88 coach-move)
+            </div>
+          </section>
+        </div>
 
-  <div class="tmg-bento-grid">
-    <section class="tmg-card">
-      <div class="tmg-card-label">Player moves to the coach</div>
-      <div class="tmg-card-value">+0.01</div>
-      <div class="tmg-card-sub">production percentile, p = 0.35 · null</div>
-    </section>
-    <section class="tmg-card">
-      <div class="tmg-card-label">Coach moves to the player</div>
-      <div class="tmg-card-value">+0.01</div>
-      <div class="tmg-card-sub">production percentile, p = 0.57 · null</div>
-    </section>
-    <section class="tmg-card">
-      <div class="tmg-card-label">Availability</div>
-      <div class="tmg-card-value">Flat</div>
-      <div class="tmg-card-sub">no effect either direction</div>
-    </section>
-    <section class="tmg-card">
-      <div class="tmg-card-label">Sample</div>
-      <div class="tmg-card-value">8,462</div>
-      <div class="tmg-card-sub">player-seasons · 425 reunions (337 player-move, 88 coach-move)</div>
-    </section>
-  </div>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">The picture</div>
+          <h3 class="tmg-h3">Two reunion effects, both on zero</h3>
+          <figure>
+            <svg
+              viewBox="0 0 440 220"
+              role="img"
+              aria-label="Both reunion effects are near zero with 95 percent intervals crossing zero"
+            >
+              <line
+                x1="197"
+                y1="50"
+                x2="197"
+                y2="178"
+                stroke="rgba(45,52,54,0.10)"
+              />
+              <line
+                x1="383"
+                y1="50"
+                x2="383"
+                y2="178"
+                stroke="rgba(45,52,54,0.10)"
+              />
+              <line
+                x1="290"
+                y1="45"
+                x2="290"
+                y2="183"
+                stroke="var(--tmg-charcoal)"
+                stroke-dasharray="3 3"
+                stroke-width="1"
+              />
+              <text
+                x="290"
+                y="200"
+                font-family="Inter"
+                font-size="10.5"
+                fill="rgba(45,52,54,0.55)"
+                text-anchor="middle"
+              >
+                0 (no effect)
+              </text>
+              <text
+                x="197"
+                y="200"
+                font-family="Inter"
+                font-size="10.5"
+                fill="rgba(45,52,54,0.45)"
+                text-anchor="middle"
+              >
+                &minus;0.05
+              </text>
+              <text
+                x="383"
+                y="200"
+                font-family="Inter"
+                font-size="10.5"
+                fill="rgba(45,52,54,0.45)"
+                text-anchor="middle"
+              >
+                +0.05
+              </text>
+              <text
+                x="150"
+                y="86"
+                font-family="Inter"
+                font-size="12"
+                fill="var(--tmg-charcoal)"
+                text-anchor="end"
+              >
+                Player moves to coach
+              </text>
+              <line
+                x1="262"
+                y1="90"
+                x2="372"
+                y2="90"
+                stroke="var(--tmg-sage)"
+                stroke-width="2"
+              />
+              <line
+                x1="262"
+                y1="84"
+                x2="262"
+                y2="96"
+                stroke="var(--tmg-sage)"
+              />
+              <line
+                x1="372"
+                y1="84"
+                x2="372"
+                y2="96"
+                stroke="var(--tmg-sage)"
+              />
+              <circle cx="316" cy="90" r="4.5" fill="var(--tmg-charcoal)" />
+              <text
+                x="150"
+                y="151"
+                font-family="Inter"
+                font-size="12"
+                fill="var(--tmg-charcoal)"
+                text-anchor="end"
+              >
+                Coach moves to player
+              </text>
+              <line
+                x1="227"
+                y1="155"
+                x2="405"
+                y2="155"
+                stroke="var(--tmg-sage)"
+                stroke-width="2"
+              />
+              <line
+                x1="227"
+                y1="149"
+                x2="227"
+                y2="161"
+                stroke="var(--tmg-sage)"
+              />
+              <line
+                x1="405"
+                y1="149"
+                x2="405"
+                y2="161"
+                stroke="var(--tmg-sage)"
+              />
+              <circle cx="316" cy="155" r="4.5" fill="var(--tmg-charcoal)" />
+            </svg>
+            <figcaption>
+              Each dot is the estimated reunion effect on production, with its
+              95 percent interval. Both dots sit just right of zero and both
+              intervals cross it. Against the fair control, movers compared to
+              movers and stayers compared to stayers, there is nothing to see.
+            </figcaption>
+          </figure>
+        </section>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">The picture</div>
-    <h3 class="tmg-h3">Two reunion effects, both on zero</h3>
-    <figure>
-      <svg viewBox="0 0 440 220" role="img" aria-label="Both reunion effects are near zero with 95 percent intervals crossing zero">
-        <line x1="197" y1="50" x2="197" y2="178" stroke="rgba(45,52,54,0.10)"/>
-        <line x1="383" y1="50" x2="383" y2="178" stroke="rgba(45,52,54,0.10)"/>
-        <line x1="290" y1="45" x2="290" y2="183" stroke="var(--tmg-charcoal)" stroke-dasharray="3 3" stroke-width="1"/>
-        <text x="290" y="200" font-family="Inter" font-size="10.5" fill="rgba(45,52,54,0.55)" text-anchor="middle">0 (no effect)</text>
-        <text x="197" y="200" font-family="Inter" font-size="10.5" fill="rgba(45,52,54,0.45)" text-anchor="middle">&minus;0.05</text>
-        <text x="383" y="200" font-family="Inter" font-size="10.5" fill="rgba(45,52,54,0.45)" text-anchor="middle">+0.05</text>
-        <text x="150" y="86" font-family="Inter" font-size="12" fill="var(--tmg-charcoal)" text-anchor="end">Player moves to coach</text>
-        <line x1="262" y1="90" x2="372" y2="90" stroke="var(--tmg-sage)" stroke-width="2"/>
-        <line x1="262" y1="84" x2="262" y2="96" stroke="var(--tmg-sage)"/><line x1="372" y1="84" x2="372" y2="96" stroke="var(--tmg-sage)"/>
-        <circle cx="316" cy="90" r="4.5" fill="var(--tmg-charcoal)"/>
-        <text x="150" y="151" font-family="Inter" font-size="12" fill="var(--tmg-charcoal)" text-anchor="end">Coach moves to player</text>
-        <line x1="227" y1="155" x2="405" y2="155" stroke="var(--tmg-sage)" stroke-width="2"/>
-        <line x1="227" y1="149" x2="227" y2="161" stroke="var(--tmg-sage)"/><line x1="405" y1="149" x2="405" y2="161" stroke="var(--tmg-sage)"/>
-        <circle cx="316" cy="155" r="4.5" fill="var(--tmg-charcoal)"/>
-      </svg>
-      <figcaption>Each dot is the estimated reunion effect on production, with its 95 percent interval. Both dots sit just right of zero and both intervals cross it. Against the fair control, movers compared to movers and stayers compared to stayers, there is nothing to see.</figcaption>
-    </figure>
-  </section>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">What this tracks</div>
+          <div class="study-prose">
+            <p>
+              A reunion is an event: a player and a coach are on the same team
+              now, were apart the year before, and were together earlier
+              somewhere else, where that coach actually coached the player's
+              position. That splits cleanly into two kinds. In a
+              <strong>player-move</strong> reunion the player changes teams to a
+              staff with a former coach. In a
+              <strong>coach-move</strong> reunion the player stays and a former
+              coach arrives. The study measures both, because a reunion can
+              happen from either side, and compares each to the right control:
+              player-move reunions against other players who also moved,
+              coach-move reunions against other players who also stayed.
+            </p>
+          </div>
+        </section>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">What this tracks</div>
-    <div class="study-prose">
-      <p>A reunion is an event: a player and a coach are on the same team now, were apart the year before, and were together earlier somewhere else, where that coach actually coached the player's position. That splits cleanly into two kinds. In a <strong>player-move</strong> reunion the player changes teams to a staff with a former coach. In a <strong>coach-move</strong> reunion the player stays and a former coach arrives. The study measures both, because a reunion can happen from either side, and compares each to the right control: player-move reunions against other players who also moved, coach-move reunions against other players who also stayed.</p>
-    </div>
-  </section>
+        <div class="tmg-bento-grid">
+          <section class="tmg-card">
+            <div class="tmg-card-label">The question</div>
+            <div class="study-prose">
+              <p>
+                Does reuniting with a former coach help a player hold his
+                production and his playing time, and does it matter whether the
+                player or the coach is the one who moves?
+              </p>
+            </div>
+          </section>
+          <section class="tmg-card">
+            <div class="tmg-card-label">The approach</div>
+            <div class="study-prose">
+              <p>
+                An event study over every player-season from 2015 to 2024, with
+                production measured as a within-position percentile and reunions
+                compared only against like players, movers to movers and stayers
+                to stayers.
+              </p>
+            </div>
+          </section>
+          <section class="tmg-card">
+            <div class="tmg-card-label">The data</div>
+            <div class="study-prose">
+              <p>
+                8,462 player-seasons built from nflverse rosters, snaps, and box
+                scores, joined to a hand-verified 2013 to 2026 coaching-staff
+                table covering head coach through position coach.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
 
-  <div class="tmg-bento-grid">
-    <section class="tmg-card">
-      <div class="tmg-card-label">The question</div>
-      <div class="study-prose"><p>Does reuniting with a former coach help a player hold his production and his playing time, and does it matter whether the player or the coach is the one who moves?</p></div>
-    </section>
-    <section class="tmg-card">
-      <div class="tmg-card-label">The approach</div>
-      <div class="study-prose"><p>An event study over every player-season from 2015 to 2024, with production measured as a within-position percentile and reunions compared only against like players, movers to movers and stayers to stayers.</p></div>
-    </section>
-    <section class="tmg-card">
-      <div class="tmg-card-label">The data</div>
-      <div class="study-prose"><p>8,462 player-seasons built from nflverse rosters, snaps, and box scores, joined to a hand-verified 2013 to 2026 coaching-staff table covering head coach through position coach.</p></div>
-    </section>
-  </div>
+    <footer class="tmg-footer">
+      The reunion premium by The Mallory Group. Last updated 2026. &nbsp;<a
+        href="https://github.com/rmallorybpc/nfl-coach-continuity"
+        style="color: var(--tmg-sage)"
+        >View the source on GitHub &rarr;</a
+      >
+    </footer>
 
-</div></main>
-
-<footer class="tmg-footer">
-  The reunion premium by The Mallory Group. Last updated 2026. &nbsp;<a href="https://github.com/rmallorybpc/nfl-coach-continuity" style="color:var(--tmg-sage)">View the source on GitHub &rarr;</a>
-</footer>
-
-<script>
-(function(){var b=document.getElementById('tmgDdBtn'),m=document.getElementById('tmgDdMenu');if(!b||!m)return;
-b.addEventListener('click',function(e){e.stopPropagation();var o=m.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o));});
-document.addEventListener('click',function(){m.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){m.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
-</script>
-</body>
+    <script>
+      (function () {
+        var b = document.getElementById("tmgDdBtn"),
+          m = document.getElementById("tmgDdMenu");
+        if (!b || !m) return;
+        b.addEventListener("click", function (e) {
+          e.stopPropagation();
+          var o = m.classList.toggle("open");
+          b.classList.toggle("open", o);
+          b.setAttribute("aria-expanded", String(o));
+        });
+        document.addEventListener("click", function () {
+          m.classList.remove("open");
+          b.classList.remove("open");
+          b.setAttribute("aria-expanded", "false");
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            m.classList.remove("open");
+            b.classList.remove("open");
+            b.setAttribute("aria-expanded", "false");
+            b.focus();
+          }
+        });
+      })();
+    </script>
+  </body>
 </html>
