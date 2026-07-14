@@ -1,134 +1,405 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Key findings — The reunion premium</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="tmg.css">
-<link rel="stylesheet" href="study.css">
-</head>
-<body>
-<nav class="tmg-nav" role="banner">
-  <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
-  <div class="tmg-dropdown-wrap">
-    <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
-      <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-    <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
-      <a href="https://rmallorybpc.github.io/nhl-free-agency-research/welcome.html" target="_blank" rel="noreferrer" role="menuitem">NHL Free Agency Research</a>
-      <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/findings.html?season=2022&team_id=PHI" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
-      <a href="https://rmallorybpc.github.io/nba-research-project/" target="_blank" rel="noreferrer" role="menuitem">NBA Supermax Research</a>
-      <a href="https://rmallorybpc.github.io/nhl-play-for-contract/" target="_blank" rel="noreferrer" role="menuitem">NHL Play for Contract</a>
-      <a href="https://rmallorybpc.github.io/talent-portability-research/" target="_blank" rel="noreferrer" role="menuitem">Talent Portability Research</a>
-      <a href="https://rmallorybpc.github.io/external-hire-premium/" target="_blank" rel="noreferrer" role="menuitem">External Hire Premium</a>
-      <a href="https://rmallorybpc.github.io/nfl-coach-continuity/" target="_blank" rel="noreferrer" role="menuitem">NFL Coach Continuity</a>
-      <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
-      <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
-      <a href="https://content-integrity-audit.pages.dev/" target="_blank" rel="noreferrer" role="menuitem">Content Integrity</a>
-      <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
-      <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
-    
-    </div>
-  </div>
-</nav>
-<div class="study-subnav"><div class="inner">
-  <a href="index.html">Overview</a>
-  <a href="findings.html" class="active">Key findings</a>
-  <a href="methods.html">Methods</a>
-  <a href="audit.html">Audit</a>
-  <a href="data.html">Data</a>
-</div></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Key findings — The reunion premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tmg.css" />
+    <link rel="stylesheet" href="study.css" />
+  </head>
+  <body>
+    <nav class="tmg-nav" role="banner">
+      <div class="tmg-nav-main">
+        <div class="tmg-logo" aria-label="The Mallory Group">
+          <span>TM</span>
+          <div class="tmg-logo-divider" aria-hidden="true"></div>
+          <span>G</span>
+        </div>
+        <div class="tmg-nav-links" aria-label="Study sections">
+          <a href="index.html">Overview</a>
+          <a href="findings.html" class="active">Key Findings</a>
+          <a href="methods.html">Methods</a>
+          <a href="audit.html">Audit</a>
+          <a href="data.html">Data and Quality</a>
+        </div>
+        <div class="tmg-dropdown-wrap">
+          <button
+            class="tmg-dropdown-btn"
+            id="tmgDdBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="tmgDdMenu"
+          >
+            TMG Tool Suite
+            <svg
+              class="tmg-chevron"
+              viewBox="0 0 12 12"
+              fill="none"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 4l4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+            <a
+              href="https://rmallorybpc.github.io/nhl-free-agency-research/welcome.html"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >NHL Free Agency Research</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/findings.html?season=2022&team_id=PHI"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >NFL Analysis</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/nba-research-project/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >NBA Supermax Research</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/nhl-play-for-contract/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >NHL Play for Contract</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/talent-portability-research/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >Talent Portability Research</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/external-hire-premium/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >External Hire Premium</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/nfl-coach-continuity/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >NFL Coach Continuity</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/recipes/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >Recipe Book</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >PDF Multi-Agent Analysis</a
+            >
+            <a
+              href="https://content-integrity-audit.pages.dev/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >Content Integrity</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/housing-market-intel/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >Housing Market Intel</a
+            >
+            <a
+              href="https://rmallorybpc.github.io/real-estate-report/"
+              target="_blank"
+              rel="noreferrer"
+              role="menuitem"
+              >Real Estate Report</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<main class="tmg-page"><div class="tmg-container">
-  <header class="tmg-page-header">
-    <p class="eyebrow">Key findings</p>
-    <h1 class="tmg-page-title">Two ways to reunite, one result</h1>
-    <p class="study-desc">Reunions are split by who moved, and each is compared only to like players. Both come back null on production and on availability.</p>
-    <p class="note">Every sample size and interval on this page is produced by the committed pipeline. The panel and counts are on the <a href="data.html">data page</a>; the model, controls, and placebo design are on the <a href="methods.html">methods page</a>.</p>
-  </header>
+    <main class="tmg-page">
+      <div class="tmg-container">
+        <header class="tmg-page-header">
+          <p class="eyebrow">Key findings</p>
+          <h1 class="tmg-page-title">Two ways to reunite, one result</h1>
+          <p class="study-desc">
+            Reunions are split by who moved, and each is compared only to like
+            players. Both come back null on production and on availability.
+          </p>
+          <p class="note">
+            Every sample size and interval on this page is produced by the
+            committed pipeline. The panel and counts are on the
+            <a href="data.html">data page</a>; the model, controls, and placebo
+            design are on the <a href="methods.html">methods page</a>.
+          </p>
+        </header>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">Finding one</div>
-    <h2 class="tmg-h2">Chasing a former coach buys nothing</h2>
-    <div class="study-prose">
-      <p>A free agent who signs with a team where a former coach now works retains <strong>+0.014</strong> more production than a comparable player who also changed teams, on the within-position percentile scale. With a 95 percent interval from &minus;0.015 to +0.044 and p = 0.35, that is a null. Moving costs production for almost everyone; reuniting with a coach does not soften the fall and does not deepen it. This is the well-powered version of the question, 337 reunions against 1,850 other movers (<a href="data.html">sample detail</a>).</p>
-    </div>
-  </section>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">Finding one</div>
+          <h2 class="tmg-h2">Chasing a former coach buys nothing</h2>
+          <div class="study-prose findings-prose-top">
+            <p>
+              A free agent who signs with a team where a former coach now works
+              retains <strong>+0.014</strong> more production than a comparable
+              player who also changed teams, on the within-position percentile
+              scale. With a 95 percent interval from &minus;0.015 to +0.044 and
+              p = 0.35, that is a null. Moving costs production for almost
+              everyone; reuniting with a coach does not soften the fall and does
+              not deepen it. This is the well-powered version of the question,
+              337 reunions against 1,850 other movers
+              (<a href="data.html">sample detail</a>).
+            </p>
+          </div>
+        </section>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">Finding two</div>
-    <h2 class="tmg-h2">Being found by a former coach adds nothing either</h2>
-    <div class="study-prose">
-      <p>A player who stays put and has a former coach arrive on his staff retains <strong>+0.014</strong> relative to comparable players who also stayed, interval &minus;0.034 to +0.062, p = 0.57. Also a null. The intuition that a coach who knows you will deploy you better does not show up in the production. It rests on 88 clean coach-arrival reunions, a smaller set than the player-move side, but the estimate is centered in the same place: zero.</p>
-    </div>
-  </section>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">Finding two</div>
+          <h2 class="tmg-h2">Being found by a former coach adds nothing either</h2>
+          <div class="study-prose findings-prose-top">
+            <p>
+              A player who stays put and has a former coach arrive on his staff
+              retains <strong>+0.014</strong> relative to comparable players who
+              also stayed, interval &minus;0.034 to +0.062, p = 0.57. Also a
+              null. The intuition that a coach who knows you will deploy you
+              better does not show up in the production. It rests on 88 clean
+              coach-arrival reunions, a smaller set than the player-move side,
+              but the estimate is centered in the same place: zero.
+            </p>
+          </div>
+        </section>
 
-  <section class="tmg-card">
-    <div class="tmg-card-label">Availability</div>
-    <h3 class="tmg-h3">Playing time is flat too</h3>
-    <div class="study-prose"><p>Measured as snap-share percentile, player-move reunions come in at +0.025 (p = 0.13) and coach-move reunions at &minus;0.012 (p = 0.61). Neither is distinguishable from zero. Reuniting does not buy a bigger role any more than it buys production.</p></div>
-  </section>
+        <div class="tmg-bento-grid">
+          <section class="tmg-card">
+            <div class="tmg-card-label">Availability</div>
+            <h3 class="tmg-h3">Playing time is flat too</h3>
+            <div class="study-prose findings-prose-mid">
+              <p>
+                Measured as snap-share percentile, player-move reunions come in
+                at +0.025 (p = 0.13) and coach-move reunions at &minus;0.012
+                (p = 0.61). Neither is distinguishable from zero. Reuniting does
+                not buy a bigger role any more than it buys production.
+              </p>
+            </div>
+          </section>
 
-  <section class="tmg-card">
-    <div class="tmg-card-label">Robustness</div>
-    <h3 class="tmg-h3">The null survives a placebo</h3>
-    <div class="study-prose"><p>Shuffling the reunion label at random among the control players, 200 times (<a href="methods.html">how the placebo works</a>), reproduces effects as large as the real ones 34 percent of the time for player-move and 60 percent for coach-move. The real estimates sit comfortably inside the noise. On selection, reunion players are close to their controls on prior production and a touch older (movers 29.2 vs 28.1, stayers 28.8 vs 26.5), and controlling for age and baseline does not move the result.</p></div>
-  </section>
+          <section class="tmg-card">
+            <div class="tmg-card-label">Robustness</div>
+            <h3 class="tmg-h3">The null survives a placebo</h3>
+            <div class="study-prose findings-prose-mid">
+              <p>
+                Shuffling the reunion label at random among the control players,
+                200 times (<a href="methods.html">how the placebo works</a>),
+                reproduces effects as large as the real ones 34 percent of the
+                time for player-move and 60 percent for coach-move. The real
+                estimates sit comfortably inside the noise. On selection,
+                reunion players are close to their controls on prior production
+                and a touch older (movers 29.2 vs 28.1, stayers 28.8 vs 26.5),
+                and controlling for age and baseline does not move the result.
+              </p>
+            </div>
+          </section>
+        </div>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">Player-move reunions</div>
-    <h3 class="tmg-h3">The player joined the coach</h3>
-    <table class="tmg-table">
-      <thead><tr><th scope="col">Player</th><th scope="col">Coached before by</th><th scope="col">The reunion</th><th scope="col" style="text-align:right">Before &rarr; after</th></tr></thead>
-      <tbody>
-      <tr><td>Terence Newman, DB</td><td>Mike Zimmer, his Bengals defensive coordinator</td><td>joined the Vikings, 2015</td><td class="num">0.53 &rarr; 0.73</td></tr>
-      <tr><td>Carson Wentz, QB</td><td>Frank Reich, his Eagles offensive coordinator</td><td>joined the Colts, 2021</td><td class="num">0.63 &rarr; 0.78</td></tr>
-      <tr><td>Marcus Mariota, QB</td><td>Arthur Smith, his Titans offensive coordinator</td><td>joined the Falcons, 2022</td><td class="num">0.13 &rarr; 0.67</td></tr>
-      <tr><td>Darius Slay, DB</td><td>Jim Schwartz, his Lions head coach</td><td>joined the Eagles, 2020</td><td class="num">0.61 &rarr; 0.60</td></tr>
-      <tr><td>Davante Adams, WR</td><td>Edgar Bennett, his Packers receivers coach</td><td>joined the Raiders, 2022</td><td class="num">0.99 &rarr; 0.98</td></tr>
-      <tr><td>Jadeveon Clowney, DL</td><td>Mike Vrabel, his Texans defensive coordinator</td><td>joined the Titans, 2020</td><td class="num">0.91 &rarr; 0.58</td></tr>
-      <tr><td>C.J. Gardner-Johnson, DB</td><td>Aaron Glenn, his Saints defensive backs coach</td><td>joined the Lions, 2023</td><td class="num">0.96 &rarr; 0.32</td></tr>
-      </tbody>
-    </table>
-    <p class="note">The role shown is how the coach worked with the player at the earlier team. That prior relationship is what makes it a reunion. The coach's title at the reunion team is often different: Zimmer was a coordinator in Cincinnati and a head coach in Minnesota. Up, flat, and down, with no pattern, is what a null looks like up close.</p>
-  </section>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">Player-move reunions</div>
+          <h3 class="tmg-h3">The player joined the coach</h3>
+          <table class="tmg-table findings-prose-top">
+            <thead>
+              <tr>
+                <th scope="col">Player</th>
+                <th scope="col">Coached before by</th>
+                <th scope="col">The reunion</th>
+                <th scope="col" class="th-right">Before &rarr; after</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Terence Newman, DB</td>
+                <td>Mike Zimmer, his Bengals defensive coordinator</td>
+                <td>joined the Vikings, 2015</td>
+                <td class="num">0.53 &rarr; 0.73</td>
+              </tr>
+              <tr>
+                <td>Carson Wentz, QB</td>
+                <td>Frank Reich, his Eagles offensive coordinator</td>
+                <td>joined the Colts, 2021</td>
+                <td class="num">0.63 &rarr; 0.78</td>
+              </tr>
+              <tr>
+                <td>Marcus Mariota, QB</td>
+                <td>Arthur Smith, his Titans offensive coordinator</td>
+                <td>joined the Falcons, 2022</td>
+                <td class="num">0.13 &rarr; 0.67</td>
+              </tr>
+              <tr>
+                <td>Darius Slay, DB</td>
+                <td>Jim Schwartz, his Lions head coach</td>
+                <td>joined the Eagles, 2020</td>
+                <td class="num">0.61 &rarr; 0.60</td>
+              </tr>
+              <tr>
+                <td>Davante Adams, WR</td>
+                <td>Edgar Bennett, his Packers receivers coach</td>
+                <td>joined the Raiders, 2022</td>
+                <td class="num">0.99 &rarr; 0.98</td>
+              </tr>
+              <tr>
+                <td>Jadeveon Clowney, DL</td>
+                <td>Mike Vrabel, his Texans defensive coordinator</td>
+                <td>joined the Titans, 2020</td>
+                <td class="num">0.91 &rarr; 0.58</td>
+              </tr>
+              <tr>
+                <td>C.J. Gardner-Johnson, DB</td>
+                <td>Aaron Glenn, his Saints defensive backs coach</td>
+                <td>joined the Lions, 2023</td>
+                <td class="num">0.96 &rarr; 0.32</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">
+            The role shown is how the coach worked with the player at the
+            earlier team. That prior relationship is what makes it a reunion.
+            The coach's title at the reunion team is often different: Zimmer was
+            a coordinator in Cincinnati and a head coach in Minnesota. Up, flat,
+            and down, with no pattern, is what a null looks like up close.
+          </p>
+        </section>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">Coach-move reunions</div>
-    <h3 class="tmg-h3">The coach came to the player</h3>
-    <table class="tmg-table">
-      <thead><tr><th scope="col">Player (stayed)</th><th scope="col">Coached before by</th><th scope="col">The reunion</th><th scope="col" style="text-align:right">Before &rarr; after</th></tr></thead>
-      <tbody>
-      <tr><td>Kirk Cousins, QB</td><td>Kevin O'Connell, his Washington quarterbacks coach</td><td>O'Connell hired as Vikings head coach, 2022</td><td class="num">0.83 &rarr; 0.91</td></tr>
-      <tr><td>Baker Mayfield, QB</td><td>Liam Coen, his Rams offensive coordinator</td><td>Coen hired as Buccaneers coordinator, 2024</td><td class="num">0.90 &rarr; 0.96</td></tr>
-      <tr><td>Bradley Chubb, LB</td><td>Vic Fangio, his Broncos head coach</td><td>Fangio hired as Dolphins coordinator, 2023</td><td class="num">0.55 &rarr; 0.99</td></tr>
-      <tr><td>Preston Smith, LB</td><td>Joe Barry, his Washington defensive coordinator</td><td>Barry hired as Packers coordinator, 2021</td><td class="num">0.88 &rarr; 0.91</td></tr>
-      <tr><td>Ryan Fitzpatrick, QB</td><td>Chan Gailey, his Jets offensive coordinator</td><td>Gailey hired as Dolphins coordinator, 2020</td><td class="num">0.64 &rarr; 0.52</td></tr>
-      <tr><td>Trumaine Johnson, DB</td><td>Gregg Williams, his Rams defensive coordinator</td><td>Williams hired as Jets coordinator, 2019</td><td class="num">0.68 &rarr; 0.27</td></tr>
-      </tbody>
-    </table>
-    <p class="note">Here the coach changed teams and the player was already there. Same story as the movers: some rose, some fell, the average is zero.</p>
-  </section>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">Coach-move reunions</div>
+          <h3 class="tmg-h3">The coach came to the player</h3>
+          <table class="tmg-table findings-prose-top">
+            <thead>
+              <tr>
+                <th scope="col">Player (stayed)</th>
+                <th scope="col">Coached before by</th>
+                <th scope="col">The reunion</th>
+                <th scope="col" class="th-right">Before &rarr; after</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kirk Cousins, QB</td>
+                <td>Kevin O'Connell, his Washington quarterbacks coach</td>
+                <td>O'Connell hired as Vikings head coach, 2022</td>
+                <td class="num">0.83 &rarr; 0.91</td>
+              </tr>
+              <tr>
+                <td>Baker Mayfield, QB</td>
+                <td>Liam Coen, his Rams offensive coordinator</td>
+                <td>Coen hired as Buccaneers coordinator, 2024</td>
+                <td class="num">0.90 &rarr; 0.96</td>
+              </tr>
+              <tr>
+                <td>Bradley Chubb, LB</td>
+                <td>Vic Fangio, his Broncos head coach</td>
+                <td>Fangio hired as Dolphins coordinator, 2023</td>
+                <td class="num">0.55 &rarr; 0.99</td>
+              </tr>
+              <tr>
+                <td>Preston Smith, LB</td>
+                <td>Joe Barry, his Washington defensive coordinator</td>
+                <td>Barry hired as Packers coordinator, 2021</td>
+                <td class="num">0.88 &rarr; 0.91</td>
+              </tr>
+              <tr>
+                <td>Ryan Fitzpatrick, QB</td>
+                <td>Chan Gailey, his Jets offensive coordinator</td>
+                <td>Gailey hired as Dolphins coordinator, 2020</td>
+                <td class="num">0.64 &rarr; 0.52</td>
+              </tr>
+              <tr>
+                <td>Trumaine Johnson, DB</td>
+                <td>Gregg Williams, his Rams defensive coordinator</td>
+                <td>Williams hired as Jets coordinator, 2019</td>
+                <td class="num">0.68 &rarr; 0.27</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">
+            Here the coach changed teams and the player was already there. Same
+            story as the movers: some rose, some fell, the average is zero.
+          </p>
+        </section>
 
-  <section class="tmg-card-wide">
-    <div class="tmg-card-label">What it means</div>
-    <div class="study-prose">
-      <p>The reunion premium the market prices in does not appear in the data. It does not matter whether the player chases the coach or the coach inherits the player; neither raises the production or the playing time the player keeps. The safe reading is not that familiarity is worthless, but that on average it does not move the outcomes a team can measure. If there is an effect, it is smaller than this study, with 8,462 player-seasons behind it, can detect. Anyone paying a premium for a reunion is paying for something the box score does not show.</p>
-    </div>
-  </section>
+        <section class="tmg-card-wide">
+          <div class="tmg-card-label">What it means</div>
+          <div class="study-prose findings-prose-top">
+            <p>
+              The reunion premium the market prices in does not appear in the
+              data. It does not matter whether the player chases the coach or
+              the coach inherits the player; neither raises the production or
+              the playing time the player keeps. The safe reading is not that
+              familiarity is worthless, but that on average it does not move the
+              outcomes a team can measure. If there is an effect, it is smaller
+              than this study, with 8,462 player-seasons behind it, can detect.
+              Anyone paying a premium for a reunion is paying for something the
+              box score does not show.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
 
-</div></main>
-
-<footer class="tmg-footer">
-  The reunion premium by The Mallory Group. Last updated 2026. &nbsp;<a href="https://github.com/rmallorybpc/nfl-coach-continuity" style="color:var(--tmg-sage)">View the source on GitHub &rarr;</a>
-</footer>
-<script>
-(function(){var b=document.getElementById('tmgDdBtn'),m=document.getElementById('tmgDdMenu');if(!b||!m)return;
-b.addEventListener('click',function(e){e.stopPropagation();var o=m.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o));});
-document.addEventListener('click',function(){m.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){m.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
-</script>
-</body>
+    <footer class="tmg-footer">
+      The reunion premium by The Mallory Group. Last updated 2026. &nbsp;<a
+        href="https://github.com/rmallorybpc/nfl-coach-continuity"
+        style="color: var(--tmg-sage)"
+        >View the source on GitHub &rarr;</a
+      >
+    </footer>
+    <script>
+      (function () {
+        var b = document.getElementById("tmgDdBtn"),
+          m = document.getElementById("tmgDdMenu");
+        if (!b || !m) return;
+        b.addEventListener("click", function (e) {
+          e.stopPropagation();
+          var o = m.classList.toggle("open");
+          b.classList.toggle("open", o);
+          b.setAttribute("aria-expanded", String(o));
+        });
+        document.addEventListener("click", function () {
+          m.classList.remove("open");
+          b.classList.remove("open");
+          b.setAttribute("aria-expanded", "false");
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            m.classList.remove("open");
+            b.classList.remove("open");
+            b.setAttribute("aria-expanded", "false");
+            b.focus();
+          }
+        });
+      })();
+    </script>
+  </body>
 </html>
