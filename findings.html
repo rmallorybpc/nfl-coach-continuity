@@ -12,247 +12,112 @@
 </head>
 <body>
 <nav class="tmg-nav" role="banner">
-  <div class="tmg-nav-main">
-    <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
-    <div class="tmg-nav-links">
-      <a href="index.html">Overview</a>
-      <a href="findings.html" class="active">Key findings</a>
-      <a href="methods.html">Methods</a>
-      <a href="audit.html">Audit</a>
-      <a href="data.html">Data</a>
-    </div>
-    <div class="tmg-dropdown-wrap">
-      <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
-        <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-      <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
-        <a href="https://rmallorybpc.github.io/nhl-free-agency-research/welcome.html" target="_blank" rel="noreferrer" role="menuitem">NHL Free Agency Research</a>
-        <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/findings.html?season=2022&team_id=PHI" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
-        <a href="https://rmallorybpc.github.io/nba-research-project/" target="_blank" rel="noreferrer" role="menuitem">NBA Supermax Research</a>
-        <a href="https://rmallorybpc.github.io/nhl-play-for-contract/" target="_blank" rel="noreferrer" role="menuitem">NHL Play for Contract</a>
-        <a href="https://rmallorybpc.github.io/talent-portability-research/" target="_blank" rel="noreferrer" role="menuitem">Talent Portability Research</a>
-        <a href="https://rmallorybpc.github.io/external-hire-premium/" target="_blank" rel="noreferrer" role="menuitem">External Hire Premium</a>
-        <a href="https://rmallorybpc.github.io/nfl-coach-continuity/" target="_blank" rel="noreferrer" role="menuitem">NFL Coach Continuity</a>
-        <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
-        <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
-        <a href="https://content-integrity-audit.pages.dev/" target="_blank" rel="noreferrer" role="menuitem">Content Integrity</a>
-        <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
-        <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
-      </div>
+  <div class="tmg-logo" aria-label="The Mallory Group"><span>TM</span><div class="tmg-logo-divider" aria-hidden="true"></div><span>G</span></div>
+  <div class="tmg-dropdown-wrap">
+    <button class="tmg-dropdown-btn" id="tmgDdBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tmgDdMenu">TMG Tool Suite
+      <svg class="tmg-chevron" viewBox="0 0 12 12" fill="none" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+    <div class="tmg-dropdown-menu" id="tmgDdMenu" role="menu">
+      <a href="https://rmallorybpc.github.io/nhl-free-agency-research/welcome.html" target="_blank" rel="noreferrer" role="menuitem">NHL Free Agency Research</a>
+      <a href="https://rmallorybpc.github.io/nflanalysis/dashboard/src/findings.html?season=2022&team_id=PHI" target="_blank" rel="noreferrer" role="menuitem">NFL Analysis</a>
+      <a href="https://rmallorybpc.github.io/nba-research-project/" target="_blank" rel="noreferrer" role="menuitem">NBA Supermax Research</a>
+      <a href="https://rmallorybpc.github.io/nhl-play-for-contract/" target="_blank" rel="noreferrer" role="menuitem">NHL Play for Contract</a>
+      <a href="https://rmallorybpc.github.io/talent-portability-research/" target="_blank" rel="noreferrer" role="menuitem">Talent Portability Research</a>
+      <a href="https://rmallorybpc.github.io/external-hire-premium/" target="_blank" rel="noreferrer" role="menuitem">External Hire Premium</a>
+      <a href="https://rmallorybpc.github.io/nfl-coach-continuity/" target="_blank" rel="noreferrer" role="menuitem">NFL Coach Continuity</a>
+      <a href="https://rmallorybpc.github.io/recipes/" target="_blank" rel="noreferrer" role="menuitem">Recipe Book</a>
+      <a href="https://rmallorybpc.github.io/pdf-multi-agent-analysis/" target="_blank" rel="noreferrer" role="menuitem">PDF Multi-Agent Analysis</a>
+      <a href="https://content-integrity-audit.pages.dev/" target="_blank" rel="noreferrer" role="menuitem">Content Integrity</a>
+      <a href="https://rmallorybpc.github.io/housing-market-intel/" target="_blank" rel="noreferrer" role="menuitem">Housing Market Intel</a>
+      <a href="https://rmallorybpc.github.io/real-estate-report/" target="_blank" rel="noreferrer" role="menuitem">Real Estate Report</a>
+    
     </div>
   </div>
 </nav>
+<div class="study-subnav"><div class="inner">
+  <a href="index.html">Overview</a>
+  <a href="findings.html" class="active">Key findings</a>
+  <a href="methods.html">Methods</a>
+  <a href="audit.html">Audit</a>
+  <a href="data.html">Data</a>
+</div></div>
 
 <main class="tmg-page"><div class="tmg-container">
   <header class="tmg-page-header">
-    <p class="tmg-eyebrow">Results</p>
-    <h1 class="tmg-page-title">Key findings</h1>
-    <p class="study-lede">Two facts, and the gap between them is the study. Teams pay a premium to reunite a free agent with a former coach. The production does not repay it.</p>
+    <p class="eyebrow">Key findings</p>
+    <h1 class="tmg-page-title">Two ways to reunite, one result</h1>
+    <p class="study-desc">Reunions are split by who moved, and each is compared only to like players. Both come back null on production and on availability.</p>
   </header>
 
-  <div class="tmg-bento-grid findings-grid">
-    <section class="tmg-card-wide">
-      <div class="tmg-card-label">Finding one</div>
-      <h3 class="tmg-h3">There is no pay premium</h3>
-      <div class="study-prose study-prose-top">
-        <p>On real-market contracts, above two million a year, a player who reunites with a former coach is paid minus 0.8 percent relative to a comparable player, with a 95 percent interval from minus 12 to plus 12 percent (p = 0.90). That is nothing. Teams do not pay up to reunite with a familiar coach.</p>
-        <p>An earlier cut put the premium at +14 percent. That number lived entirely in the minimum-salary and zero-dollar tier, which is most of the signings, where a small composition difference gets amplified into a spurious figure. On contracts where teams actually make a decision, it disappears.</p>
-      </div>
-    </section>
+  <section class="tmg-card-wide">
+    <div class="tmg-card-label">Finding one</div>
+    <h2 class="tmg-h2">Chasing a former coach buys nothing</h2>
+    <div class="study-prose">
+      <p>A free agent who signs with a team where a former coach now works retains <strong>+0.014</strong> more production than a comparable player who also changed teams, on the within-position percentile scale. With a 95 percent interval from &minus;0.015 to +0.044 and p = 0.35, that is a null. Moving costs production for almost everyone; reuniting with a coach does not soften the fall and does not deepen it. This is the well-powered version of the question, 337 reunions against 1,850 other movers.</p>
+    </div>
+  </section>
 
-    <section class="tmg-card-wide">
-      <div class="tmg-card-label">Finding two</div>
-      <h3 class="tmg-h3">Reunited players retain slightly less</h3>
-      <div class="study-prose study-prose-block">
-        <p>Production does not rise with a reunion. It falls a little. The effect is about six percentile points below zero, and it is consistent whether the reunion runs through the head coach, a coordinator, or a position coach, and whether you look one season out or two.</p>
-      </div>
-      <table class="tmg-table">
-        <thead><tr><th scope="col">Reunion runs through</th><th scope="col" class="th-right">1 season</th><th scope="col" class="th-right">2 seasons</th></tr></thead>
-        <tbody>
-          <tr><td>Head coach only</td><td class="num">&minus;0.07 (p=0.08)</td><td class="num">&minus;0.08 (p=0.04)</td></tr>
-          <tr><td>Coordinators</td><td class="num">&minus;0.07 (p=0.05)</td><td class="num">&minus;0.06 (p=0.05)</td></tr>
-          <tr><td>Position coaches</td><td class="num">&minus;0.06 (p=0.05)</td><td class="num">&minus;0.06 (p=0.04)</td></tr>
-        </tbody>
-      </table>
-      <p class="note">Prior-role players, pooled offense and defense, 74 reunions. Outcome is within-position production percentile. Controls for baseline, age, position, and year.</p>
-      <div class="study-prose study-prose-mid"><p>Availability is roughly flat, a touch negative (−0.02, p = 0.31). Reunion players hold their snap share at about the same rate as everyone else. They play. They just do not produce more with the time, and if anything a little less.</p></div>
-    </section>
+  <section class="tmg-card-wide">
+    <div class="tmg-card-label">Finding two</div>
+    <h2 class="tmg-h2">Being found by a former coach adds nothing either</h2>
+    <div class="study-prose">
+      <p>A player who stays put and has a former coach arrive on his staff retains <strong>+0.014</strong> relative to comparable players who also stayed, interval &minus;0.034 to +0.062, p = 0.57. Also a null. The intuition that a coach who knows you will deploy you better does not show up in the production. It rests on 88 clean coach-arrival reunions, a smaller set than the player-move side, but the estimate is centered in the same place: zero.</p>
+    </div>
+  </section>
 
-    <section class="tmg-card-wide">
-      <div class="tmg-card-label">The spread behind the average</div>
-      <h3 class="tmg-h3">Every reunion, before and after</h3>
-      <figure class="spread-chart-figure">
-        <svg viewBox="0 0 440 340" role="img" aria-label="Scatter of each reunion, prior-season production percentile against post-move percentile, most below the line of no change">
-          <style>
-            .spread-chart-shared-text{font-family:Inter;font-size:8px;fill:rgba(45,52,54,0.55)}
-          </style>
-          <line x1="56" y1="40" x2="56" y2="300" stroke="rgba(45,52,54,0.15)"/>
-          <line x1="56" y1="300" x2="410" y2="300" stroke="rgba(45,52,54,0.15)"/>
-          <line x1="56" y1="300" x2="410" y2="40" stroke="var(--tmg-sage)" stroke-dasharray="4 3" stroke-width="1.3"/>
-          <text x="392" y="58" font-family="Inter" font-size="8.5" fill="var(--tmg-sage-hover)" text-anchor="end">line of no change</text>
-          <circle cx="310.9" cy="294.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="289.6" cy="292.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="268.4" cy="297.4" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="342.7" cy="240.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="349.8" cy="224.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="247.2" cy="279.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="300.3" cy="235.0" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="204.7" cy="297.4" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="229.5" cy="276.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="385.2" cy="162.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="342.7" cy="183.0" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="275.5" cy="229.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="257.8" cy="240.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="374.6" cy="146.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="218.8" cy="255.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="342.7" cy="164.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="155.1" cy="287.0" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="268.4" cy="201.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="141.0" cy="292.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="176.4" cy="263.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="307.3" cy="167.4" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="211.8" cy="237.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="282.6" cy="177.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="314.4" cy="151.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="314.4" cy="146.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="194.1" cy="237.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="158.7" cy="263.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="229.5" cy="206.4" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="130.3" cy="279.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="130.3" cy="279.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="141.0" cy="268.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="257.8" cy="185.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="105.6" cy="292.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="353.4" cy="107.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="144.5" cy="261.0" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="257.8" cy="175.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="218.8" cy="203.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="243.6" cy="185.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="201.1" cy="214.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="94.9" cy="289.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="339.2" cy="107.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="225.9" cy="190.8" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="123.3" cy="263.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="87.9" cy="284.4" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="250.7" cy="167.4" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="137.4" cy="250.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="165.7" cy="224.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="289.6" cy="133.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="144.5" cy="240.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="222.4" cy="183.0" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="325.0" cy="107.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="201.1" cy="198.6" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="218.8" cy="183.0" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="282.6" cy="136.2" r="3.4" fill="var(--tmg-charcoal)" opacity="0.30"/>
-              <circle cx="342.7" cy="89.4" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="165.7" cy="216.8" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="102.0" cy="261.0" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="197.6" cy="188.2" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="218.8" cy="167.4" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="296.7" cy="107.6" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="144.5" cy="216.8" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="158.7" cy="206.4" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="59.5" cy="276.6" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="268.4" cy="115.4" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="148.0" cy="201.2" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="208.2" cy="154.4" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="204.7" cy="154.4" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="105.6" cy="224.6" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="102.0" cy="216.8" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="133.9" cy="190.8" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="109.1" cy="209.0" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="70.2" cy="235.0" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="123.3" cy="183.0" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="165.7" cy="131.0" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="66.6" cy="180.4" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="133.9" cy="92.0" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-              <circle cx="141.0" cy="86.8" r="3.6" fill="var(--tmg-sage)" opacity="0.85"/>
-          <circle cx="300.3" cy="235.0" r="5" fill="none" stroke="var(--tmg-charcoal)" stroke-width="1.2"/>
-          <text x="294" y="238" class="spread-chart-shared-text" text-anchor="end">A. Peterson</text>
-          <circle cx="310.9" cy="294.8" r="5" fill="none" stroke="var(--tmg-charcoal)" stroke-width="1.2"/>
-          <text x="304" y="298" class="spread-chart-shared-text" text-anchor="end">R. Evans</text>
-          <circle cx="141.0" cy="86.8" r="5" fill="none" stroke="var(--tmg-sage-hover)" stroke-width="1.3"/>
-          <text x="149" y="84" class="spread-chart-shared-text">S. McLendon</text>
-          <circle cx="218.8" cy="203.8" r="5" fill="none" stroke="var(--tmg-charcoal)" stroke-width="1.2"/>
-          <text x="226" y="201" class="spread-chart-shared-text">M. Lewis</text>
-          <text x="56" y="316" class="spread-chart-shared-text">0</text>
-          <text x="404" y="316" class="spread-chart-shared-text">1.0</text>
-          <text x="233" y="332" class="spread-chart-shared-text" text-anchor="middle">production before the move (percentile)</text>
-          <text x="18" y="170" class="spread-chart-shared-text" text-anchor="middle" transform="rotate(-90 18 170)">after the move</text>
-        </svg>
-        <figcaption>Each dot is one reunion, prior-season percentile across and post-move percentile up. Below the dashed line means the player fell; above means he rose. 54 of 77 land below it, which is the small negative average. The story is the scatter as much as the tilt: reunions land everywhere, and the lean down is slight. Sage dots rose, grey dots fell.</figcaption>
-      </figure>
-    </section>
+  <section class="tmg-card">
+    <div class="tmg-card-label">Availability</div>
+    <h3 class="tmg-h3">Playing time is flat too</h3>
+    <div class="study-prose"><p>Measured as snap-share percentile, player-move reunions come in at +0.025 (p = 0.13) and coach-move reunions at &minus;0.012 (p = 0.61). Neither is distinguishable from zero. Reuniting does not buy a bigger role any more than it buys production.</p></div>
+  </section>
 
-    <section class="tmg-card-wide">
-      <div class="tmg-card-label">Notable reunions</div>
-      <table class="tmg-table">
-        <thead><tr><th scope="col">Player</th><th scope="col">Followed</th><th scope="col">Move</th><th scope="col" class="th-right">Before &rarr; after</th></tr></thead>
-        <tbody>
-        <tr><td>Terence Newman, DB</td><td>Mike Zimmer, head coach</td><td>Bengals &rarr; Vikings, 2017</td><td class="num">0.48 &rarr; 0.42</td></tr>
-        <tr><td>Adrian Peterson, RB</td><td>Dan Campbell, head coach</td><td>Saints &rarr; Lions, 2021</td><td class="num">0.69 &rarr; 0.25</td></tr>
-        <tr><td>Cordarrelle Patterson, RB</td><td>Dave Ragone, offensive coordinator</td><td>Bears &rarr; Falcons, 2022</td><td class="num">0.93 &rarr; 0.53</td></tr>
-        <tr><td>Raheem Mostert, RB</td><td>Mike McDaniel, head coach</td><td>49ers &rarr; Dolphins, 2023</td><td class="num">0.80 &rarr; 0.74</td></tr>
-        <tr><td>Jimmy Graham, TE</td><td>Luke Getsy, offensive coordinator</td><td>Packers &rarr; Bears, 2022</td><td class="num">0.49 &rarr; 0.36</td></tr>
-        <tr><td>Dante Fowler, DL</td><td>Dan Quinn, defensive coordinator</td><td>Falcons &rarr; Cowboys, 2023</td><td class="num">0.76 &rarr; 0.74</td></tr>
-        <tr><td>Kareem Jackson, DB</td><td>Vance Joseph, defensive coordinator</td><td>Texans &rarr; Broncos, 2023</td><td class="num">0.41 &rarr; 0.39</td></tr>
-        <tr><td>Eli Apple, DB</td><td>Lou Anarumo, defensive coordinator</td><td>Giants &rarr; Bengals, 2022</td><td class="num">0.73 &rarr; 0.59</td></tr>
-        </tbody>
-      </table>
-      <p class="note">Recognizable names, both directions. A couple held, most slipped, and the archetypal reunion, Terence Newman following Mike Zimmer, roughly held. The same pattern as the full set.</p>
-    </section>
+  <section class="tmg-card">
+    <div class="tmg-card-label">Robustness</div>
+    <h3 class="tmg-h3">The null survives a placebo</h3>
+    <div class="study-prose"><p>Shuffling the reunion label at random among the control players, 200 times, reproduces effects as large as the real ones 34 percent of the time for player-move and 60 percent for coach-move. The real estimates sit comfortably inside the noise. On selection, reunion players are close to their controls on prior production and a touch older (movers 29.2 vs 28.1, stayers 28.8 vs 26.5), and controlling for age and baseline does not move the result.</p></div>
+  </section>
 
-    <section class="tmg-card-wide">
-      <div class="tmg-card-label">Reunions that held or rose</div>
-      <table class="tmg-table">
-        <thead><tr><th scope="col">Player</th><th scope="col">Followed</th><th scope="col">Move</th><th scope="col" class="th-right">Before &rarr; after</th></tr></thead>
-        <tbody>
-        <tr><td>Steve McLendon, DL</td><td>Todd Bowles, defensive coordinator</td><td>Jets &rarr; Buccaneers, 2021</td><td class="num">0.24 &rarr; 0.82</td></tr>
-        <tr><td>Neville Hewitt, LB</td><td>Adam Gase, head coach</td><td>Dolphins &rarr; Jets, 2019</td><td class="num">0.22 &rarr; 0.80</td></tr>
-        <tr><td>Marcedes Lewis, TE</td><td>Nathaniel Hackett, offensive coordinator</td><td>Jaguars &rarr; Packers, 2019</td><td class="num">0.03 &rarr; 0.46</td></tr>
-        <tr><td>Solomon Thomas, DL</td><td>Robert Saleh, head coach</td><td>49ers &rarr; Jets, 2023</td><td class="num">0.31 &rarr; 0.65</td></tr>
-        <tr><td>Cody Latimer, WR</td><td>Tyke Tolbert, position coach</td><td>Broncos &rarr; Giants, 2019</td><td class="num">0.19 &rarr; 0.45</td></tr>
-        <tr><td>Michael Burton, RB</td><td>Sean Payton, head coach</td><td>Saints &rarr; Broncos, 2024</td><td class="num">0.04 &rarr; 0.25</td></tr>
-        </tbody>
-      </table>
-    </section>
+  <section class="tmg-card-wide">
+    <div class="tmg-card-label">Player-move reunions</div>
+    <h3 class="tmg-h3">The player followed the coach</h3>
+    <table class="tmg-table">
+      <thead><tr><th scope="col">Player</th><th scope="col">Reunited with</th><th scope="col">Player's move</th><th scope="col" style="text-align:right">Before &rarr; after</th></tr></thead>
+      <tbody>
+      <tr><td>Terence Newman, DB</td><td>Mike Zimmer, head coach</td><td>Bengals &rarr; Vikings, 2015</td><td class="num">0.53 &rarr; 0.73</td></tr>
+      <tr><td>Carson Wentz, QB</td><td>Frank Reich, head coach</td><td>Eagles &rarr; Colts, 2021</td><td class="num">0.63 &rarr; 0.78</td></tr>
+      <tr><td>Marcus Mariota, QB</td><td>Arthur Smith, head coach</td><td>Titans &rarr; Falcons, 2022</td><td class="num">0.13 &rarr; 0.67</td></tr>
+      <tr><td>Darius Slay, DB</td><td>Jim Schwartz, defensive coordinator</td><td>Lions &rarr; Eagles, 2020</td><td class="num">0.61 &rarr; 0.60</td></tr>
+      <tr><td>Davante Adams, WR</td><td>Edgar Bennett, position coach</td><td>Packers &rarr; Raiders, 2022</td><td class="num">0.99 &rarr; 0.98</td></tr>
+      <tr><td>Jadeveon Clowney, DL</td><td>Mike Vrabel, head coach</td><td>Texans &rarr; Titans, 2020</td><td class="num">0.91 &rarr; 0.58</td></tr>
+      <tr><td>C.J. Gardner-Johnson, DB</td><td>Aaron Glenn, defensive coordinator</td><td>Saints &rarr; Lions, 2023</td><td class="num">0.96 &rarr; 0.32</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Up, flat, and down, with no pattern. That scatter with no center is what a null looks like up close.</p>
+  </section>
 
-    <section class="tmg-card-wide">
-      <div class="tmg-card-label">Reunions that fell off</div>
-      <table class="tmg-table">
-        <thead><tr><th scope="col">Player</th><th scope="col">Followed</th><th scope="col">Move</th><th scope="col" class="th-right">Before &rarr; after</th></tr></thead>
-        <tbody>
-        <tr><td>Rashaan Evans, LB</td><td>Arthur Smith, head coach</td><td>Titans &rarr; Falcons, 2023</td><td class="num">0.72 &rarr; 0.02</td></tr>
-        <tr><td>Donte Moncrief, WR</td><td>Jim Hostler, position coach</td><td>Colts &rarr; Panthers, 2019</td><td class="num">0.66 &rarr; 0.03</td></tr>
-        <tr><td>Efe Obada, DL</td><td>Ron Rivera, head coach</td><td>Panthers &rarr; Commanders, 2023</td><td class="num">0.60 &rarr; 0.01</td></tr>
-        <tr><td>Jeff Wilson, RB</td><td>Mike McDaniel, head coach</td><td>49ers &rarr; Dolphins, 2023</td><td class="num">0.81 &rarr; 0.23</td></tr>
-        <tr><td>Benson Mayowa, DL</td><td>Ken Norton, defensive coordinator</td><td>Raiders &rarr; Seahawks, 2021</td><td class="num">0.83 &rarr; 0.29</td></tr>
-        <tr><td>Daryl Worley, DB</td><td>Sean McDermott, head coach</td><td>Panthers &rarr; Bills, 2020</td><td class="num">0.54 &rarr; 0.08</td></tr>
-        </tbody>
-      </table>
-    </section>
+  <section class="tmg-card-wide">
+    <div class="tmg-card-label">Coach-move reunions</div>
+    <h3 class="tmg-h3">The coach came to the player</h3>
+    <table class="tmg-table">
+      <thead><tr><th scope="col">Player</th><th scope="col">Reunited with</th><th scope="col">Coach's move</th><th scope="col" style="text-align:right">Before &rarr; after</th></tr></thead>
+      <tbody>
+      <tr><td>Kirk Cousins, QB</td><td>Kevin O'Connell, head coach</td><td>Commanders &rarr; Vikings, 2022</td><td class="num">0.83 &rarr; 0.91</td></tr>
+      <tr><td>Baker Mayfield, QB</td><td>Liam Coen, offensive coordinator</td><td>Rams &rarr; Buccaneers, 2024</td><td class="num">0.90 &rarr; 0.96</td></tr>
+      <tr><td>Bradley Chubb, LB</td><td>Vic Fangio, defensive coordinator</td><td>Broncos &rarr; Dolphins, 2023</td><td class="num">0.55 &rarr; 0.99</td></tr>
+      <tr><td>Preston Smith, LB</td><td>Joe Barry, defensive coordinator</td><td>Commanders &rarr; Packers, 2021</td><td class="num">0.88 &rarr; 0.91</td></tr>
+      <tr><td>Ryan Fitzpatrick, QB</td><td>Chan Gailey, offensive coordinator</td><td>Jets &rarr; Dolphins, 2020</td><td class="num">0.64 &rarr; 0.52</td></tr>
+      <tr><td>Trumaine Johnson, DB</td><td>Gregg Williams, defensive coordinator</td><td>Rams &rarr; Jets, 2019</td><td class="num">0.68 &rarr; 0.27</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Here the coach is the one who changed teams; the player was already there. Same story: some rose, some fell, the average is zero.</p>
+  </section>
 
-    <section class="tmg-card findings-tall-card">
-      <div class="tmg-card-label">Robustness</div>
-      <h3 class="tmg-h3">Small, but it holds up</h3>
-      <div class="study-prose study-prose-top">
-        <p>The negative is not a selection artifact. Reunion and non-reunion players have identical baseline production and near-identical age, so this is not mean reversion or aging. It survives squared baseline and age terms. And in a placebo test, shuffling the reunion label 200 times centers on zero, while the real effect sits outside the entire placebo range.</p>
-        <p>It is small, about six percentile points, and it fades to non-significance on market-only or single-side subsamples, so it needs the pooled sample of roughly 74 reunions to see. Read it as a modest drag, not a large one. The full record of how the result changed is in the audit log.</p>
-      </div>
-    </section>
+  <section class="tmg-card-wide">
+    <div class="tmg-card-label">What it means</div>
+    <div class="study-prose">
+      <p>The reunion premium the market prices in does not appear in the data. It does not matter whether the player chases the coach or the coach inherits the player; neither raises the production or the playing time the player keeps. The safe reading is not that familiarity is worthless, but that on average it does not move the outcomes a team can measure. If there is an effect, it is smaller than this study, with 8,462 player-seasons behind it, can detect. Anyone paying a premium for a reunion is paying for something the box score does not show.</p>
+    </div>
+  </section>
 
-    <section class="tmg-card findings-tall-card">
-      <div class="tmg-card-label">What it means</div>
-      <h3 class="tmg-h3">The belief points the wrong way</h3>
-      <div class="study-prose study-prose-top">
-        <p>The market treats reunions as an edge and talks about them every March. They command no premium once the data is clean, and reunited players retain a little less production, not more. Whatever teams reach for when they bring back a familiar player, it does not show up as pay or as output. The one thing the data will not support is the thing everyone assumes.</p>
-      </div>
-    </section>
-  </div>
-
-  <div class="pagenav">
-    <a href="index.html">&larr; Overview</a>
-    <a href="methods.html">Methods &rarr;</a>
-  </div>
 </div></main>
 
 <footer class="tmg-footer">
