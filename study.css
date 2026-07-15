@@ -175,6 +175,10 @@ svg {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.tmg-table-caption {
+  text-align: left;
+  caption-side: top;
+}
 .pagenav {
   display: flex;
   justify-content: space-between;
