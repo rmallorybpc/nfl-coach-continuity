@@ -29,6 +29,11 @@ def main():
                         (P[P.moved==0],"coach_move","coach-move vs other stayers")]:
         b,p,n,t,ci=fit(sub,key,dv="out_av",base="base_av")
         print(f"  {lab:32} {b:+.3f}  (p={p:.2f}, n={n}, reunions={t})")
+    print("\nSELECTION BALANCE  (treated vs control: baseline production, age)")
+    for sub,key,lab in [(P[P.moved==1],"player_move","movers"),(P[P.moved==0],"coach_move","stayers")]:
+        d=sub.dropna(subset=["out","base","age"]); t=d[d[key]==1]; c=d[d[key]==0]
+        print(f"  {lab:8} base {t.base.mean():.3f} vs {c.base.mean():.3f}  |  age {t.age.mean():.1f} vs {c.age.mean():.1f}")
+
     print("\nPLACEBO  (shuffle treatment within control, 200x)")
     rng=np.random.default_rng(1)
     for sub,key,lab in [(P[P.moved==1].dropna(subset=['out','base','age']),"player_move","player-move"),
